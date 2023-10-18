@@ -11,6 +11,7 @@ const Hello  = require('./lib/hello');
 Server.route({
     method: 'GET',
     path: '/hello/{user}',
+
     handler: function (request, reply) {
 
         const result = Hello(decodeURIComponent(request.params.user));
