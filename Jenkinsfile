@@ -22,4 +22,10 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            archiveArtifacts artifacts: 'app.js', followSymlinks: false    
+        }
+    }
+
 }
