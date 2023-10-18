@@ -11,10 +11,11 @@ pipeline {
     stages {
         stage('Example') {
             environment { 
-                ACCESS_KEY = credentials('github-token') 
+                ACCESS_KEY = credentials('test1') 
             }
             steps {
                 sh 'printenv | grep ACCESS_KEY'
+                sh 'echo "Service user is $ACCESS_KEY_USR"'
             }
         }
         stage('Build') {
