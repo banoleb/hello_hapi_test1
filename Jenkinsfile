@@ -9,6 +9,14 @@ pipeline {
     }
 
     stages {
+        stage('Example') {
+            environment { 
+                ACCESS_KEY = credentials('github-token') 
+            }
+            steps {
+                sh 'printenv | grep ACCESS_KEY'
+            }
+        }
         stage('Build') {
             steps {
                 echo 'Building...'
