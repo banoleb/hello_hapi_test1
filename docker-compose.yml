@@ -1,0 +1,5 @@
+services:
+  web-prod:
+    image: johnnybravo6/testnpm:master
+    ports:
+      - "4000:3000"
