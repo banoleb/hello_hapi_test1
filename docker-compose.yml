@@ -1,0 +1,5 @@
+services:
+  web:
+    image: johnnybravo6/testnpm:staging
+    ports:
+      - "3000:3000"
