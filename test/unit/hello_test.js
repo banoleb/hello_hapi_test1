@@ -10,7 +10,7 @@ lab.experiment('test greetings', () => {
 
     lab.test('greets with name ', () => {
 
-        Code.expect(Hello('Homer')).to.equal('Hello, Homer!');
+        Code.expect(Hello('Homer')).to.equal('Hello, Homer! This is staging dev app!');
     });
 
 });
